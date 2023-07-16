@@ -1,0 +1,124 @@
+/* SearchBar.module.css */
+
+/* Styles for the search bar container */
+/* SearchBar.module.css */
+
+/* Styles for the search bar container */
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./background_search_desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+/* Rest of the CSS styles remain the same */
+
+
+/* Styles for the sorting buttons container */
+.sort-btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.22rem;
+    /* color: #ffffff; */
+    border-bottom: 1px solid #f0c36c;
+    color: #f0c36c;
+}
+
+/* Styles for the sorting buttons */
+.sort-btn {
+    appearance: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Style for the selected sorting button */
+.sort-btn:checked {
+    background: linear-gradient(135deg, #00bfff, #1e90ff);
+}
+
+/* Styles for the search inputs */
+.search-inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.88rem;
+}
+
+.search-inputs input {
+    width: 21rem;
+    padding: 0.66rem 1rem;
+    margin-right: 2.22rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 0.77rem;
+    font-weight: 500;
+}
+
+/* Style for the search input label */
+.search-inputs input:last-child {
+    margin-right: 0;
+}
+
+/* Styles for the search input fields */
+.search-term,
+.search-location {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-term::placeholder,
+.search-location::placeholder {
+    color: #555;
+}
+
+/* Hover styles for the search input fields */
+.search-term:hover,
+.search-location:hover,
+.search-term:focus,
+.search-location:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Styles for the submit button */
+/* Styles for the submit button */
+.submit {
+    padding: 16px 26px;
+    /* Larger padding to make it 1.3 times bigger */
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #f9a03f, #fd7e14);
+    /* Different coloring */
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    /* Slightly larger font size */
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, #ffac5c, #f95a00);
+    /* Different coloring on hover */
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    .search-bar {
+        max-width: 100%;
+    }
+}
