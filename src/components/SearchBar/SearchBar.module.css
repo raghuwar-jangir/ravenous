@@ -22,24 +22,39 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2.22rem;
-    /* color: #ffffff; */
+}
+
+/* Styles for the sorting buttons */
+.sort-btns ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.22rem;
+    color: #ffffff;
+}
+
+.sort-btns li {
+    cursor: pointer;
+    width: 4.33rem;
+    border-bottom: 1px solid #fff;
+    padding: 0 2.58rem 0.33rem 2.58rem;
+    line-height: 1.13;
+    text-align: center;
+    font-weight: 600;
+    transition: color 0.25s;
+    list-style: none;
+}
+
+.sort-btns li {
+    color: #d4cfcf;
+}
+
+.sort-btns li.active,
+.sort-btns li.active:hover {
     border-bottom: 1px solid #f0c36c;
     color: #f0c36c;
 }
 
-/* Styles for the sorting buttons */
-.sort-btn {
-    appearance: none;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    background: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.2s ease-in-out;
-}
+
 
 /* Style for the selected sorting button */
 .sort-btn:checked {
